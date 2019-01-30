@@ -153,14 +153,6 @@ header {
     box-shadow: 0 .9rem 2rem rgba(0,0,0,.3)!important;
 }
 
-.gradient-fill{
-    color: #fc73b4;
-    background: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
 /*--------------------------------------------- 
 
                 App Info
