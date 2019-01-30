@@ -1,0 +1,353 @@
+/*--------------------------------------------- 
+
+                    Global
+
+---------------------------------------------*/
+.h1{
+    font-weight: 400;
+}
+
+
+
+
+/*--------------------------------------------- 
+
+                    NAVBAR
+
+---------------------------------------------*/
+.nav-menu {
+    transition: all .3s ease;
+    padding: .5rem
+}
+
+.navbar-brand{
+    font-size: 16px;
+}
+
+.navbar{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* برای درست کار کردن خط زیر هر ایتم که زمان اکتیو میاد */
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.nav-item .btn-sm{
+    font-size: .8rem;
+}
+
+.nav-menu.menu-is-opend ,
+.nav-menu.is-scrolling {
+    padding: 0;
+    background-color: rgb(74,13,143);
+    background: linear-gradient(135deg , rgb(74,13,143) 0% , rgb(250,42,143) 100%);
+    box-shadow:  0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width : 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size : 14px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link.active::after {
+        content: "";
+        border-bottom: 2px solid #cd99d4;
+        left: 1rem;
+        right : 1rem;
+        bottom: 5px;
+        height: 1px;
+        position: absolute;
+    }
+}
+
+@media (max-width : 991px) {
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+}
+
+
+/*--------------------------------------------- 
+
+                    HEADER
+
+---------------------------------------------*/
+
+header {
+    padding: 100px 0 0;
+    text-align: center;
+    color : #fff;
+}
+
+.bg-gradient {
+    background-image: linear-gradient(135deg , rgba(60,8,118,.8) 0% , rgba(250,0,118,0.8) 100%);
+}
+
+.my-lead{
+    font-weight: 400;
+    font-size: 20px;
+    width: 70%;
+    color: #e0b6e6
+}
+
+.img-holder {
+    height: 0;
+    padding-bottom: 45%;
+    overflow: hidden;
+}
+
+@media (max-width : 1200px) {
+    .img-holder {
+        padding-bottom: 70%;
+    }
+}
+
+@media (max-width : 767px) {
+    .img-holder {
+        padding-bottom: 100%;
+    }
+}
+
+
+/*--------------------------------------------- 
+
+                Section Properties
+
+---------------------------------------------*/
+
+.shadow-md {
+    box-shadow: 0 .2rem 1rem rgba(0,0,0,.075)!important;
+}
+
+.section-properties{
+    background-color: #faf6fb;
+}
+
+.my-small{
+    font-size: .85rem;
+    font-weight: 450;
+    line-height: 1.6;
+}
+
+.feature{
+    transition: all .3s ease;
+}
+
+.feature:before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    color: #fc73b4;
+    background: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.card.feature:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 .9rem 2rem rgba(0,0,0,.3)!important;
+}
+
+.gradient-fill{
+    color: #fc73b4;
+    background: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*--------------------------------------------- 
+
+                App Info
+
+---------------------------------------------*/
+
+.my-btn{
+    background: linear-gradient(122deg ,#e54595 0% , #fd378e 100%);
+    font-size: .78rem;
+    border-radius: 3px;
+    padding: .55rem 1.7rem;
+    box-shadow: 0px 9px 32px 0px rgba(0,0,0,.2);
+}
+
+.my-btn:hover,
+.my-btn:focus,
+.my-btn:active,
+.my-btn:not([disabled]):not(.disabled).active,
+.my-btn:not([disabled]):not(.disabled):active,
+.show>.my-btn.dropdown-toggle {
+    background-image: linear-gradient(122deg , #fd378e 0% , #e54595 100%);
+    box-shadow: 0px 9px 32px 0px rgba(0,0,0,.3);
+    color: #fff;
+}
+
+.box-icon{
+    background-color: #fff;
+    box-shadow: 0 .1rem 2rem rgba(0,0,0,.3);
+    width: 5rem;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.perspective-phone{
+    margin-top: -150px;
+}
+
+
+/*--------------------------------------------- 
+
+                Nav Info
+
+---------------------------------------------*/
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.nav-tabs .nav-item{
+    margin-bottom: 0;
+}
+
+.nav-tabs .nav-item .nav-link{
+    border-radius: 0;
+    font-weight: 500;
+    text-align: center;
+    background-color: #ebe3ec;
+    color: #ccb5cf;
+}
+
+.nav-tabs .nav-item .nav-link.active{
+    background: #fff;
+    border-top-width: .3rem;
+    border-color: #ce75b4 #faf6fb #fff;
+    color: #633991;
+}
+
+
+/*--------------------------------------------- 
+
+                guid App
+
+---------------------------------------------*/
+.my-circle{
+    border-radius: 50%;
+    background-color: #fff;
+    color: #fd378e;
+    font-size: 3.5rem;
+    width: 6.2rem;
+    height: 6.2rem;
+    text-align: center;
+    line-height: 5.8rem;
+    font-weight: 300;
+    transition: all .1s ease
+}
+
+.my-circle:hover{
+    background-image: linear-gradient(122deg , #fd378e 0% , #e54595 100%);
+    color: #fff;
+}
+
+/*--------------------------------------------- 
+
+                Comments Part
+
+---------------------------------------------*/
+
+.comment p{
+    font-weight: 400
+}
+
+.comments .owl-item img{
+    margin: 0 auto; 
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.owl-prev.disabled,
+.owl-next.disabled{
+    opacity: .5;
+}
+
+.owl-prev,
+.owl-next{
+    position: absolute;
+    top: 50%;
+}
+
+.owl-next{
+    right: 0;
+}
+
+.owl-prev{
+    left: 0;
+}
+
+/*--------------------------------------------- 
+
+                Gallery Part
+
+---------------------------------------------*/
+
+.img-gallery .owl-item{
+    box-shadow:  0px 0px 32px 0px rgba(0, 0, 0, 0.1);
+    transform: scale(.8);
+    transition: all 0.3s ease-in;
+}
+
+.img-gallery .owl-item.center{
+    transform: scale(1)
+}
+
+.img-gallery .owl-dots{
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.img-gallery .owl-dots .owl-dot {
+    margin: 0 .6rem;
+    background: #e7d9eb;
+    width: 35px;
+    height: 8px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+
+.img-gallery .owl-dots .owl-dot.active {
+    background: #e54595
+}
+
+.img-gallery .owl-dots .owl-dot:hover {
+    background: #e9a0d3
+}
+
+/*--------------------------------------------- 
+
+              Panel Upgrade Part
+
+---------------------------------------------*/
+
+#panel-row .card{
+    border-top: solid;
+    border-top-width: 4px;
+    border-top-color: #bb62a0
+}
+
+
+.social-icons a{
+    background-color: #fff;
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.05);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #f4c9e2;
+    margin: 0 0.3rem;
+    transition: all 0.3s ease;
+}
