@@ -42,7 +42,7 @@
 .nav-menu.is-scrolling {
     padding: 0;
     background-color: rgb(74,13,143);
-    background: linear-gradient(135deg , rgb(74,13,143) 0% , rgb(250,42,143) 100%);
+    background:#811627;
     box-shadow:  0px 5px 23px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -55,7 +55,7 @@
 
     .navbar-expand-lg .navbar-nav .nav-link.active::after {
         content: "";
-        border-bottom: 2px solid #cd99d4;
+        border-bottom: 2px solid #fff;
         left: 1rem;
         right : 1rem;
         bottom: 5px;
@@ -84,14 +84,14 @@ header {
 }
 
 .bg-gradient {
-    background-image: linear-gradient(135deg , rgba(60,8,118,.8) 0% , rgba(250,0,118,0.8) 100%);
+    background-image: linear-gradient(135deg, #b71f38 0%, #811627 100%);
 }
 
 .my-lead{
     font-weight: 400;
     font-size: 20px;
     width: 70%;
-    color: #e0b6e6
+    color: #ffffff
 }
 
 .img-holder {
@@ -347,7 +347,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    color: #f4c9e2;
+    color: #000;
     margin: 0 0.3rem;
     transition: all 0.3s ease;
 }
