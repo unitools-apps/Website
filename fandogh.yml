@@ -1,0 +1,8 @@
+kind: ExternalService
+name: !!python/unicode '  '
+spec:
+  image_pull_policy: Always
+  port: 80
+  source:
+    context: .
+    project_type: !!python/unicode 'static_website'
